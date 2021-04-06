@@ -1,52 +1,404 @@
-<html>
-    <head></head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawi Clinics | مفهوم جديد للعيادات في مصر</title>
 
-        <form>
-            <fieldset style="background-color: crimson;">
-                <legend style="background-color: chartreuse;">Personal Data</legend>
-                <br><br><br>
-            <fieldset style="background-color: cornflowerblue;">
-                <legend style="background-color: chartreuse; height: 50px; padding-top: 25px;">Your Name</legend>
-                <label>First Name :</label>
-                <input required type="text" name="fname">
-                <br>
-                <label>Last Name :</label>
-                <input required type="text" name="lname">
-            </fieldset>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-            <br><br><br><br>
-                <label>Your Phone :</label>
-                <input required type="number" name="phonenumber">
-                <br>
-                <label>Email :</label>
-                <input required type="email" name="useremail">
-                <br>
-                <label>Password :</label>
-                <input required type="password" name="userpassword">
-                <br>
-                <label>Re-Password :</label>
-                <input required type="password" name="userrepassword">
-                <br><br><br>
-                <input type="radio" name="gender" value="male">
-                <label>Male</label>
-                <br>
-                <input type="radio" name="gender" value="female">
-                <label>Female</label>
-                <br><br><br>
-                <input type="checkbox" name="case" value="student">
-                <label>Student</label>
-                <br>
-                <input type="checkbox" name="case" value="graduated">
-                <label>Graduated</label>
-                <br><br><br>
-                <select name="degree">
-                    <option value="auc">AUC</option>
-                </select>
-                <br>
-                <button type="submit">submit</button>
-            </fieldset>
-        </form>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  
+  <div class="nav-top-info fixed-top">
+    <div class=" top-info bg-info py-2">
+      <div class=" container-lg d-flex justify-content-between">
+  
+        <div class=" d-flex align-items-center">
+          <div>
+            <a class=" pl-2 font-weight-bold text-decoration-none" href="#"><img src="img/lang_en.svg" width="30" alt=""></a>
+            <a class=" font-weight-bold text-decoration-none" href="#"><i class="fas fa-search"></i></a>
+          </div>
+          <div class=" line-y-right mx-2"></div>
+          <div class=" item">
+            <a class=" pl-4 font-weight-bold text-decoration-none" href="#">عن داوي</a>
+            <a class=" pl-4 font-weight-bold text-decoration-none" href="#">وظائف داوي</a>
+            <a class=" pl-4 font-weight-bold text-decoration-none" href="#">برنامج عائلة داوي</a>
+          </div>
+        </div>
+    
+        <div class=" d-flex align-items-center">
+          <a class=" font-weight-bold text-decoration-none" href="tel:+16850"><span>16850</span><i class="fas fa-phone-alt mr-1"></i></a>
+          <div class=" line-y-left mx-2"></div>
+          <a class=" font-weight-bold text-decoration-none" href="#"><i class=" fab fa-instagram"></i></a>
+          <a class=" pr-3 font-weight-bold text-decoration-none" href="#"><i class=" fab fa-linkedin-in"></i></a>
+          <a class=" pr-3 font-weight-bold text-decoration-none" href="#"><i class=" fab fa-youtube"></i></a>
+          <a class=" pr-3 font-weight-bold text-decoration-none" href="#"><i class=" fab fa-twitter"></i></a>
+          <a class=" pr-3 font-weight-bold text-decoration-none" href="#"><i class=" fab fa-facebook-f"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class=" container-lg">
+        <a class="navbar-brand d-flex justify-content-start" href=""><img src="img/dawi.svg" width="120" alt=""></a>
+        <button class="navbar-toggler border-0 mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-2x text-dark"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4 font-weight-bold text-right" href="#">التخصصات الطبية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link px-lg-4 font-weight-bold text-right" href="#">فروعنا<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link px-lg-4 font-weight-bold text-right" href="#">التعاقدات التأمينية<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4 font-weight-bold text-right" href="#">مقالات تهمك<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+        <a class=" mr-auto nav-link btn-booking text-white text-decoration-none p-3 text-center" href="#">أحجز الأن</a>
+      </div>
+    </nav>
+  </div>
 
-    </body>
+  <section id="header">
+    <div">
+      <img id="imgHeader" class=" img-fluid" src="img/01.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="bottomHaeder">
+    <div class="container item text-center">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class=" bg-primary pb-1 pt-3 px-2">
+            <a class=" text-white text-decoration-none" href="#">
+              <img src="img/insurances.svg" width="100" alt="">
+              <h3 class=" h5 font-weight-bold">هل تأمينك الصحي مغطى في داوي؟</h3>
+              <p>يدعم داوي العديد منشركات التأمين الصحي</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class=" bg-info pb-1 pt-3">
+            <a class=" text-white text-decoration-none" href="#">
+              <img src="img/medical.svg" width="100" alt="">
+              <h3 class=" h5 font-weight-bold"> التخصصات الطبية</h3>
+              <p>لدى داوي تخصصات طبية متنوعة</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class=" bg-orange pb-1 pt-3 px-2">
+            <a class=" text-white text-decoration-none" href="#">
+              <img src="img/programs.svg" width="100" alt="">
+              <h3 class=" h5 font-weight-bold">إنضم الأن لبرنامج عائلة داوي</h3>
+              <p>أحصل على باقة من الامتيازات لك للأسراتك</p>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="whyDawi" class=" py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="item col-lg-6 my-auto">
+          <div class=" bg-info text-center text-white p-5">
+            <h2 class=" font-weight-bold">لماذا عيادات داوي</h2>
+            <div class="line-x my-4">
+              <div class=" line-in m-auto"></div>
+            </div>
+            <h3 class=" h4 font-weight-normal mb-3">نظام صحي متكامل لك ولأسرتك</h3>
+            <p class=" font-weight-normal fa-1x mb-4">تسعي عيادات داوى الى تغيير مفهوم الرعاية الصحية الأولية
+              في مصر من خلال تقديم خدمات طبية فريدة للأسرة
+              المصرية تعتمد على تطبيق المعاييرالعالمية للرعاية الصحية
+              .الأولية</p>
+              <button class=" btn btn-orange rounded-0 text-white px-4 py-3 shadow">اعرف المزيد</button>
+          </div>
+        </div>
+
+        <div class="img col-lg-6 my-auto">
+          <div>
+            <img class=" img-fluid" src="img/about_home.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="check">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-2 mb-4">
+          <img class=" img-fluid" src="img/banner.svg" alt="">
+        </div>
+
+        <div class="col-lg-5">
+          <div class=" text-center text-primary">
+            <h2 class=" font-weight-bold mb-4">معلومات تهمك</h2>
+            <div class="line-x mb-4">
+              <div class=" line-in m-auto"></div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+
+              <div class="item">
+                <img class=" mb-2" src="img/timthumb (1).jpg" alt="">
+                <a class=" font-weight-bold text-decoration-none text-primary h4" href="#">اللولب الهرمونى: ما الفارق بينه وبين اللولب النحاسى؟</a>
+                <p class=" text-dark mt-3">اللولب من أكثر وسائل تنظيم الأسرة انتشارا وتفضله الكثير من السيدات، واللولب الهرمونى هو نوع خاص يتميز عن اللولب النحاسى أو التقليدى بعدد من المميزات تجعله هو الأنسب فى عدد غير قليل من الحالات، فى هذا المقال نتعرف على اللولب الهرمونى ومميزاته</p>
+              </div>
+
+              <div class="item">
+                <img class=" mb-2" src="img/timthumb (10).jpg" alt="">
+                <a class=" font-weight-bold text-decoration-none text-primary h4" href="#">التطعيمات الاضافية للاطفال: ضرورة ولا دلع</a>
+                <p class=" text-dark mt-3">التطعيمات أو التحصينات هى وسيلة فعالة وآمنة لحماية الإنسان وبخاصة الأطفال من عدد كبير من الأمراض، لذلك تحرص معظم دول العالم على توفيرها بل وتجعل الحصول على بعضها إجباريا لجميع الأطفال</p>
+              </div>
+
+              <div class="item">
+                <img class=" mb-2" src="img/timthumb (3).jpg" alt="">
+                <a class=" font-weight-bold text-decoration-none text-primary h4" href="#">ما هي اسباب اضطراب الدورة الشهرية؟ وكيف تعالج؟</a>
+                <p class=" text-dark mt-3">تعانى العديد من النساء من اضطراب الدورة الشهرية في وقت ما من حياتهن، وقد تكون هذه المشكلة بالنسبة للبعض طفيفة ويمكن تحملها، بينما تسبّب للأخريات الانزعاج والانهاك، وتكون اضطرابات الدورة الشهرية أكثر شيوعا بين المراهقات أو في السيدات فى المرحلة السابقة لانقطاع الدورة الشهرية تماماً، وتكون السيدات اللاتى يعانين من زيادة الوزن أكثر عرضة لاضطرابات الدورة الشهرية.</p>
+              </div>
+
+              <div class="item">
+                <img class=" mb-2" src="img/timthumb (2).jpg" alt="">
+                <a class=" font-weight-bold text-decoration-none text-primary h4" href="#">المكورات الرئوية وأهمية التطعيم ضدها</a>
+                <p class=" text-dark mt-3">تطعيم المكورات الرئوية من التطعيمات الهامة التى تنصح منظمة الصحة العالمية بإعطائها لجميع الأطفال لحمايتهم من العديد من الأمراض الخطيرة، فى هذا المقال نتعرف على المكورات الرئوية والأمراض التى يمكن أن تسببها وأهمية التطعيم ضدها</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="speciDawi" class=" py-5">
+    <div class="container py-5">
+
+      <div class=" head-speciDawi mb-4 text-center">
+        <h2 class=" text-primary font-weight-bold mb-3">تخصصات داوي الطبية</h2>
+        <div class="line-x mb-4">
+          <div class=" line-in m-auto"></div>
+        </div>
+        <p class=" font-weight-bold">تسعي عيادات داوى الى تغيير مفهوم الرعاية الصحية الأولية في مصر من خلال تقديم خدمات طبية فريدة للأسرة المصرية تعتمد
+          .على تطبيق المعايير العالمية للرعاية الصحية الأولية</p>
+      </div>
+
+      <div class=" body-speciDawi text-center text-white">
+        <div class="row mb-4">
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-primary p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_01.svg" width="100" alt="الباطنة العامة">
+                <h3 class=" h5">الباطنة العامة</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-gray p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_02.svg" width="100" alt="الأطفال وحديثي الولادة">
+                <h3 class=" h5">الأطفال وحديثي الولادة</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-primary p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_03.svg" width="100" alt="النساء والتوليد">
+                <h3 class=" h5">النساء والتوليد</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-info p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_04.svg" width="100" alt="العظام">
+                <h3 class=" h5">العظام</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-info p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_05.svg" width="100" alt="جراحة الفم والأسنان">
+                <h3 class=" h5">جراحة الفم والأسنان</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-primary p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_06.svg" width="100" alt="الأنف والأذن والحنجرة">
+                <h3 class=" h5">الأنف والأذن والحنجرة</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class=" bg-info p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/sub_services_07.svg" width="100" alt="الجليدية">
+                <h3 class=" h5">الجليدية</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class=" bg-gray p-4">
+              <a class=" text-white text-decoration-none" href="#">
+                <img class=" mb-1" src="img/services_08.svg" width="100" alt="النفسية والعصبية">
+                <h3 class=" h5">النفسية والعصبية</h3>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class=" d-flex justify-content-center">
+          <button class=" btn btn-orange rounded-0 text-white px-4 py-3">
+            <div class=" d-flex align-items-center">
+              <img src="img/booking.svg" width="100" alt="">
+              <div class=" d-flex flex-column pr-3">
+                <p class=" fa-1x font-weight-bold mb-0">أحجز موعد الأن</p>
+                <span class="">واحصل على خدمة طبية متميزة</span>
+              </div>
+            </div>
+            
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="footer">
+    <div class="main-footer bg-info py-5">
+      <div class="container px-lg-5">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 my-auto">
+                <div class=" d-flex flex-column justify-content-around mb-3">
+                  <a class=" w-100 btn btn-outline-light rounded-0 py-2 mb-3 font-weight-bold" href="tel:+16850"><span>16850</span><i class="fas fa-phone-alt mr-1"></i></a>
+                  <button class=" btn btn-orange text-white rounded-0 py-2 mb-3">أحجز موعدك</button>
+                  <button class=" btn btn-primary rounded-0 py-2 mb-3">فروع داوي</button>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                <div class=" d-flex flex-column align-items-start justify-content-between h-100">
+                  <img class=" mb-4" src="img/dawi_light.svg" width="50%" alt="">
+                  <h3 class=" text-primary font-weight-bold text-right">مواعيد عمل العيادات</h3>
+                  <h4 class=" text-white font-weight-bold text-right h5">جميع أيام الأسبوع</h4>
+                  <p class=" text-right text-white">من الساعة 10 صباحاً - حتى 11 مساءً</p>
+                  <p class=" text-right text-white">الجمعة من 2 ظهراً - حتى 10 مساًء</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div class="line-x my-xl-0 my-lg-0 my-md-3 my-sm-3"></div>
+            <div class="row h-100">
+
+              <div class="col-4">
+                <ul class=" navbar-nav text-right pr-0 h-100 ">
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">فروعنا</a></li>
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">برنامج عائلة داوي</a></li>
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">وظائف داوي</a></li>
+                </ul>
+              </div>
+
+              <div class="col-4">
+                <ul class=" navbar-nav text-right pr-0 h-100">
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">عن داوي</a></li>
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">مقالات تهمك</a></li>
+                </ul>
+              </div>
+
+              <div class="col-4">
+                <ul class=" navbar-nav text-right pr-0 h-100">
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">التخصصات الطبية</a></li>
+                  <li class=" nav-item py-3"><a class=" text-white text-decoration-none" href="#">التعاقدات التأمينية</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-footer bg-orange py-2">
+      <div class="container px-lg-5">
+
+        <div class="row">
+          <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-2">
+            <div class=" d-flex justify-content-center justify-content-md-start">
+              <a class=" pl-3 font-weight-bold text-decoration-none text-white" href="#"><i class=" fab fa-instagram"></i></a>
+              <a class=" pl-3 font-weight-bold text-decoration-none text-white" href="#"><i class=" fab fa-linkedin-in"></i></a>
+              <a class=" pl-3 font-weight-bold text-decoration-none text-white" href="#"><i class=" fab fa-youtube"></i></a>
+              <a class=" pl-3 font-weight-bold text-decoration-none text-white" href="#"><i class=" fab fa-twitter"></i></a>
+              <a class=" pl-3 font-weight-bold text-decoration-none text-white" href="#"><i class=" fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-2">
+            <div class=" d-flex justify-content-center justify-content-md-end">
+              <span class=" text-white fa-1x font-weight-normal">جميع الحقوق محفوظ لعيادات داوي © 2021</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/index.js"></script>
+</body>
 </html>
